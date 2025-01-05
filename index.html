@@ -40,9 +40,9 @@
 		color: #ff6600 !important; /* Keep text orange */
 	    }
 		#about {
-    background-color: #ff6600; /* Set background to brand orange */
-    color: #fff; /* Ensure text is readable on orange background */
-    padding: 60px 0; /* Add padding for better spacing */
+        background-color: #ff6600; /* Set background to brand orange */
+        color: #fff; /* Ensure text is readable on orange background */
+        padding: 60px 0; /* Add padding for better spacing */
 		}
 	    </style>
 		
@@ -97,7 +97,7 @@
 					
 					<!-- logo -->
 					<h1 class="navbar-brand">
-						<a href="#body"> <!-- Make logo link to homepage -->
+						<a href="#" data-target="body"> <!-- Make logo link to homepage -->
 							<img src="wordmarklogo.png" alt="Whitney M.A. Logo" height="75">
 						  </a>
 					</h1>
@@ -106,12 +106,12 @@
 
 				<nav class="collapse navbar-collapse navbar-right" role="navigation">
 					<ul id="nav" class="nav navbar-nav">
-						<li><a href="#body">Home</a></li>
-						<li><a href="#service">Services</a></li>
-						<li><a href="#portfolio">Blog</a></li>
-						<li><a href="#testimonials">Testimonials</a></li>
-						<li><a href="about.html" class="external">About</a></li>
-						<li><a href="#contact">Contact</a></li>
+						<li><a href="#" data-target="body">Home</a></li>
+						<li><a href="#" data-target="service">Services</a></li>
+						<li><a href="#" data-target="portfolio">Blog</a></li>
+						<li><a href="#" data-target="testimonials">Testimonials</a></li>
+						<li><a href="./about" class="external">About</a></li>
+						<li><a href="#" data-target="contact">Contact</a></li>
 					</ul>
 				</nav>
 				
@@ -139,7 +139,7 @@
 							<div class="caption-content">
 								<h2 class="animated fadeInDown">Empowering Businesses & Learners</h2>
 								<span class="animated fadeInDown">Consulting & support services to help you succeed!</span>
-								<a href="#service" class="btn btn-blue btn-effect custom-orange-btn">Start here</a>
+								<a href="#" data-target="service" class="btn btn-blue btn-effect custom-orange-btn">Start here</a>
 							</div>
 						</div>		
 						
@@ -153,7 +153,7 @@
                             <div class="caption-content">
                                 <h2>Business Support Services</h2>
                                 <span>Save time & money—expert support—no compromises on results.</span>
-                                <a href="business.html" class="btn btn-blue btn-effect custom-orange-btn" class="external">Pricing</a>
+                                <a href="./business" class="btn btn-blue btn-effect custom-orange-btn" class="external">Pricing</a>
                             </div>
                         </div>
 						
@@ -166,7 +166,7 @@
                             <div class="caption-content">
                                 <h2>Learning & Tutoring</h2>
                                 <span>Personalized learning support & community</span>
-                                <a href="learning.html" class="btn btn-blue btn-effect custom-orange-btn" class="external">Sign up</a>
+                                <a href="./learning" class="btn btn-blue btn-effect custom-orange-btn" class="external">Sign up</a>
                             </div>
                         </div>
 
@@ -237,7 +237,7 @@
 									solutions for entrepreneurs, and learners, building a thriving community of 
 									empowered individuals who can contribute meaningfully to society.</p>
 						     	 </div>
-						       	<a href="about.html" class="btn btn-border btn-effect pull-right" class="external">Read More</a>
+						       	<a href="./about" class="btn btn-border btn-effect pull-right" class="external">Read More</a>
 						    </div>
 						</div>
 					</div>
@@ -259,7 +259,7 @@
 						<div class="col-md-3 col-sm-6 col-xs-12 text-center wow animated zoomIn">
 							<div class="service-item">
 								<div class="service-icon">
-									<a href="business.html" class="external"><i class="fa fa-tasks fa-3x"></i></a>
+									<a href="./business" class="external"><i class="fa fa-tasks fa-3x"></i></a>
 								</div>
 								<h3>Business Support</h3>
 								<p>Streamline your operations and ensure you are set up for success 
@@ -270,7 +270,7 @@
 						<div class="col-md-3 col-sm-6 col-xs-12 text-center wow animated zoomIn" data-wow-delay="0.3s">
 							<div class="service-item">
 								<div class="service-icon">
-									<a href="learning.html " class="external"><i class="fa fa-book fa-3x"></i></a>
+									<a href="./learning" class="external"><i class="fa fa-book fa-3x"></i></a>
 								</div>
 								<h3>Learning Support</h3>
 								<p>Helping learners excel with personalized educational services and tutoring in various subjects.</p>
@@ -290,7 +290,7 @@
 						<div class="col-md-3 col-sm-6 col-xs-12 text-center wow animated zoomIn" data-wow-delay="0.9s">
 							<div class="service-item">
 								<div class="service-icon">
-									<a href="#portfolio"><i class="fa fa-heart fa-3x"></i></a>
+									<a href="#" data-target="portfolio"><i class="fa fa-heart fa-3x"></i></a>
 								</div>
 								
 								<h3>Community</h3>
@@ -558,5 +558,38 @@
         <script src="js/wow.min.js"></script>
 		<!-- Custom Functions -->
         <script src="js/main.js"></script>
+
+		<script>
+			// Function to scroll to a section by ID
+			function scrollToSection(sectionId) {
+				const targetElement = document.getElementById(sectionId);
+				if (targetElement) {
+					targetElement.scrollIntoView({ behavior: 'smooth' });
+		
+					// Clean up the URL by removing query parameters
+					const cleanURL = window.location.origin + window.location.pathname;
+					window.history.replaceState(null, '', cleanURL);
+				}
+			}
+		
+			// Handle navigation clicks (for same-page navigation)
+			document.querySelectorAll('a[data-target]').forEach(link => {
+				link.addEventListener('click', function (e) {
+					e.preventDefault(); // Prevent default anchor behavior
+					const targetId = this.getAttribute('data-target'); // Get the target section ID
+					scrollToSection(targetId);
+				});
+			});
+		
+			// Handle cross-page navigation (using query parameters)
+			window.addEventListener('load', () => {
+				const urlParams = new URLSearchParams(window.location.search);
+				const section = urlParams.get('section'); // Get the 'section' parameter from the URL
+				if (section) {
+					scrollToSection(section); // Scroll to the specified section
+				}
+			});
+		</script>
+				
     </body>
 </html>
