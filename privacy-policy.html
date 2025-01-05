@@ -97,7 +97,7 @@
 					
 					<!-- logo -->
 					<h1 class="navbar-brand">
-						<a href="index.html" class="external"> <!-- Make logo link to homepage -->
+						<a href="./" class="external"> <!-- Make logo link to homepage -->
 							<img src="wordmarklogo.png" alt="Whitney M.A. Logo" height="75">
 						  </a>
 					</h1>
@@ -106,12 +106,12 @@
 
 				<nav class="collapse navbar-collapse navbar-right" role="navigation">
 					<ul id="nav" class="nav navbar-nav">
-						<li><a href="index.html"  class="external">Home</a></li>
-						<li><a href="index.html#service"  class="external">Services</a></li>
-						<li><a href="index.html#portfolio"  class="external">Blog</a></li>
-						<li><a href="index.html#testimonials"  class="external">Testimonials</a></li>
-						<li><a href="about.html" class="external">About</a></li>
-						<li><a href="index.html#contact"  class="external">Contact</a></li>
+						<li><a href="./" class="external">Home</a></li>
+						<li><a href="./?section=service" class="external">Services</a></li>
+						<li><a href="./?section=portfolio" class="external">Blog</a></li>
+						<li><a href="./?section=testimonials" class="external">Testimonials</a></li>
+						<li><a href="./about" class="external">About</a></li>
+						<li><a href="./?section=contact" class="external">Contact</a></li>
 					</ul>
 				</nav>
 				
@@ -251,7 +251,7 @@
 
 
 						<p>Copyright &copy; 2024-2025 Whitney M. A. Management, Consultation & Academic Services. 
-						<a href="privacy-policy.html">Privacy Policy </a> 
+						<a href="./privacy-policy">Privacy Policy </a> 
 						Theme By: <a href="http://www.themefisher.com">Themefisher</a> </p>
 
 						<script async src="https://whatsform.com/launcher.js" id="wf-widget" data-id="lvanxq" 
@@ -288,5 +288,39 @@
         <script src="js/wow.min.js"></script>
 		<!-- Custom Functions -->
         <script src="js/main.js"></script>
+
+		<script>
+			// Function to scroll to a section by ID
+			function scrollToSection(sectionId) {
+				const targetElement = document.getElementById(sectionId);
+				if (targetElement) {
+					targetElement.scrollIntoView({ behavior: 'smooth' });
+		
+					// Clean up the URL by removing query parameters
+					const cleanURL = window.location.origin + window.location.pathname;
+					window.history.replaceState(null, '', cleanURL);
+				}
+			}
+		
+			// Handle navigation clicks (for same-page navigation)
+			document.querySelectorAll('a[data-target]').forEach(link => {
+				link.addEventListener('click', function (e) {
+					e.preventDefault(); // Prevent default anchor behavior
+					const targetId = this.getAttribute('data-target'); // Get the target section ID
+					scrollToSection(targetId);
+				});
+			});
+		
+			// Handle cross-page navigation (using query parameters)
+			window.addEventListener('load', () => {
+				const urlParams = new URLSearchParams(window.location.search);
+				const section = urlParams.get('section'); // Get the 'section' parameter from the URL
+				if (section) {
+					scrollToSection(section); // Scroll to the specified section
+				}
+			});
+		</script>
+		
+		
     </body>
 </html>
