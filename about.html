@@ -26,39 +26,78 @@
 		<!-- CSS
 		================================================== -->
 
-       <style>
-	    .custom-orange-btn {
-		background-color: #ff6600 !important; /* Brand orange */
-		border-color: #ff6600 !important; /* Match border to button */
-		color: #fff !important; /* White text for readability */
-		text-decoration: none; /* Ensures no underline */
-		transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for hover */
-	    }
-		.custom-orange-btn:hover {
-		background-color: #cc5200; /* Slightly darker orange for hover */
-		border-color: #cc5200; /* Match hover border */
-		color: #ff6600 !important; /* Keep text orange */
-	    }
-		#about {
-    background-color: #ff6600; /* Set background to brand orange */
-    color: #fff; /* Ensure text is readable on orange background */
-    padding: 60px 0; /* Add padding for better spacing */
-		}
-		#privacy-policy .about-content {
-    max-width: 800px; /* Restrict content width */
-    margin: 0 auto; /* Center the content horizontally */
-    padding: 20px; /* Add some padding around the text */
-    text-align: left; /* Align text to the left for readability */
-}
-
-@media (max-width: 768px) {
-    #privacy-policy .about-content {
-        padding: 15px; /* Adjust padding for smaller screens */
-    }
-}
-
+		<style>
+			/* Button Styling */
+			.custom-orange-btn {
+				background-color: #ff6600 !important; /* Brand orange */
+				border-color: #ff6600 !important; /* Match border to button */
+				color: #fff !important; /* White text for readability */
+				text-decoration: none; /* Ensures no underline */
+				transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for hover */
+			}
 		
-	    </style>
+			.custom-orange-btn:hover {
+				background-color: #cc5200; /* Slightly darker orange for hover */
+				border-color: #cc5200; /* Match hover border */
+				color: #ff6600 !important; /* Keep text orange */
+			}
+		
+			/* About Section Styling */
+			#about {
+				background-color: #ff6600; /* Set background to brand orange */
+				color: #fff; /* Ensure text is readable on orange background */
+				padding: 60px 0; /* Add padding for better spacing */
+			}
+		
+			#privacy-policy .about-content {
+				max-width: 800px; /* Restrict content width */
+				margin: 0 auto; /* Center the content horizontally */
+				padding: 20px; /* Add some padding around the text */
+				text-align: left; /* Align text to the left for readability */
+			}
+		
+			/* Responsive Styling */
+			@media (max-width: 768px) {
+				#privacy-policy .about-content {
+					padding: 15px; /* Adjust padding for smaller screens */
+				}
+		
+				#privacy-policy .row {
+					flex-direction: column; /* Stack items vertically */
+				}
+		
+				#privacy-policy .image-section {
+					order: -1; /* Move image above the text */
+					width: 100%; /* Take full width */
+					text-align: center; /* Center align on mobile */
+				}
+		
+				#privacy-policy .image-section img {
+					max-width: 100%; /* Scale image to full width */
+					height: auto; /* Maintain aspect ratio */
+				}
+		
+				#privacy-policy .text-section {
+					width: 100%; /* Ensure full width for text */
+				}
+			}
+		
+			/* General Flexbox Layout */
+			#privacy-policy .row {
+				display: flex;
+				flex-wrap: wrap;
+				align-items: center;
+				gap: 20px;
+			}
+		
+			#privacy-policy .image-section img {
+				width: 100%;
+				max-width: 350px;
+				height: auto;
+				object-fit: cover;
+				margin: 0 auto;
+			}
+		</style>
 		
 
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
@@ -149,17 +188,17 @@
 					<!-- Content Section -->
 					<div class="row" style="display: flex; flex-wrap: wrap; align-items: center; gap: 20px;">
 						<!-- Image Section -->
-						<div style="flex: 1; text-align: center;">
+						<div class="image-section" style="flex: 1; text-align: center;">
 							<img src="img/me.jpg" alt="About Me"
 								 style="width: 100%; max-width: 350px; height: auto; object-fit: cover;">
 						</div>
 						<!-- Text Section -->
-						<div style="flex: 2;">
+						<div class="text-section" style="flex: 2;">
 							<div class="about-content" style="line-height: 1.8; text-align: justify; padding: 10px;">
 								<p>
 									I believe that success is rooted in meaningful connections and purposeful actions. 
 									Professionally, I am a graduate of the University of the West Indies (BSc. Psychology; 
-									minor Human Resource Management) with 12 + years of experience in banking, finance and
+									minor Human Resource Management) with 12+ years of experience in banking, finance, and
 									business administration. I am also a registered teacher in Trinidad & Tobago, and I combine 
 									my passion for education with my professional skills. My mission is to provide tailored 
 									business solutions, expert guidance, and learning support to entrepreneurs, students, 
@@ -177,9 +216,7 @@
 						</div>
 					</div>
 				</div>
-			</section>		
-			
-			
+			</section>
 					
 			
 			<!-- Social section -->
