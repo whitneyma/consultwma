@@ -64,6 +64,8 @@
 		<!-- Main Stylesheet -->
         <link rel="stylesheet" href="css/main.css">
 
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 		<!-- Modernizer Script for old Browsers -->
         <script src="js/modernizr-2.6.2.min.js"></script>
 
@@ -681,11 +683,38 @@
 										<script async src="https://whatsform.com/launcher.js" id="wf-widget" data-id="lvanxq" 
 										data-message="Message on WhatsApp" ></script>
 
-										<script src="https://embed.ycb.me"	async="true"	data-domain="whitneyma"	data-content="all"	
-										data-type="button-floating"	data-innertext="Schedule a Meeting"	data-buttonicon="calendar"	
-										data-buttonposition="bottomRight"	data-buttoncolor="#FF6600"></script>
+										<!-- Floating Bigin Booking Button -->
+<style>
+  #bigin-float-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #FF6600;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-family: 'LatoBold', sans-serif;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 16px;
+  }
 
+  #bigin-float-button:hover {
+    background-color: #e65c00;
+  }
+</style>
 
+<a href="https://us.bigin.online/whitneyma/bookings/consult" target="_blank">
+  <button id="bigin-float-button">
+    <i class="fas fa-calendar-alt"></i> Schedule a Meeting
+  </button>
+</a>
 
 									</div>								
 					
