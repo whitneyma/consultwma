@@ -144,12 +144,13 @@
             </div>
             <div class="col-md-12">
                 <div class="policy-content">
-                    <iframe aria-label="Client Information Form" 
-                        frameborder="0" 
-                        allow="geolocation;" 
-                        style="height:500px;width:99%;border:none;" 
-                        src="https://forms.zohopublic.com/whitneyma/form/ClientDetails/formperma/cWe5MvD38zE2U3882V2k-fxD31_87c4oISCvYTFsUNc">
-                    </iframe>
+<iframe aria-label="Client Information Form" 
+    frameborder="0" 
+    allow="geolocation;" 
+    style="height:800px;width:100%;border:none;" 
+    src="https://forms.zohopublic.com/whitneyma/form/ClientDetails/formperma/cWe5MvD38zE2U3882V2k-fxD31_87c4oISCvYTFsUNc/embed">
+</iframe>
+
                 </div>
             </div>
         </div>
