@@ -1,1 +1,304 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html lang="en" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+    <head>
+    	<!-- meta character set -->
+        <meta charset="utf-8">
+		<!-- Always force latest IE rendering engine or request Chrome Frame -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Learning Support - Whitney M. A.</title>		
+		<!-- Meta Description -->
+        <meta name="description" content="Expert business consulting, support services, and learning resources in Trinidad & Tobago. Empowering entrepreneurs, 
+		students, and communities to succeed.">
+        <meta name="keywords" content="business consulting Trinidad, virtual assistance Trinidad, learning support TT, entrepreneurship support Trinidad,
+		 community building TT, learning, tutoring, academic coaching, private tutoring, homeschool Trinidad, microschool">
+        <meta name="author" content="Muhammad Morshed">
+		
+		<!-- Mobile Specific Meta -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<!-- Favicon -->
+		<link rel="icon" type="image/png" href="favicon.png">
+		
+		<!-- CSS
+		================================================== -->
 
+       <style>
+	    .custom-orange-btn {
+		background-color: #ff6600 !important; /* Brand orange */
+		border-color: #ff6600 !important; /* Match border to button */
+		color: #fff !important; /* White text for readability */
+		text-decoration: none; /* Ensures no underline */
+		transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for hover */
+	    }
+		.custom-orange-btn:hover {
+		background-color: #cc5200; /* Slightly darker orange for hover */
+		border-color: #cc5200; /* Match hover border */
+		color: #ff6600 !important; /* Keep text orange */
+	    }
+		#about {
+    background-color: #ff6600; /* Set background to brand orange */
+    color: #fff; /* Ensure text is readable on orange background */
+    padding: 60px 0; /* Add padding for better spacing */
+		}
+		
+	    </style>
+		
+
+		<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+		
+		<!-- Fontawesome Icon font -->
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+		<!-- bootstrap.min -->
+        <link rel="stylesheet" href="css/jquery.fancybox.css">
+		<!-- bootstrap.min -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+		<!-- bootstrap.min -->
+        <link rel="stylesheet" href="css/owl.carousel.css">
+		<!-- bootstrap.min -->
+        <link rel="stylesheet" href="css/slit-slider.css">
+		<!-- bootstrap.min -->
+        <link rel="stylesheet" href="css/animate.css">
+		<!-- Main Stylesheet -->
+        <link rel="stylesheet" href="css/main.css">
+
+		<!-- Modernizer Script for old Browsers -->
+        <script src="js/modernizr-2.6.2.min.js"></script>
+
+    </head>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YS6174L7J8"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YS6174L7J8');
+</script>
+	
+	<html>	
+    <body id="body">
+
+		<!-- preloader -->
+		<div id="preloader">
+            <div class="loder-box">
+            	<div class="battery"></div>
+            </div>
+		</div>
+		<!-- end preloader -->
+
+        <!--
+        Fixed Navigation
+        ==================================== -->
+        <header id="navigation" class="navbar-inverse navbar-fixed-top animated-header">
+            <div class="container">
+                <div class="navbar-header">
+                    <!-- responsive nav button -->
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+                    </button>
+					<!-- /responsive nav button -->
+					
+					<!-- logo -->
+					<h1 class="navbar-brand">
+						<a href="./" class="external"> <!-- Make logo link to homepage -->
+							<img src="wordmarklogo.png" alt="Whitney M.A. Logo" height="75">
+						  </a>
+					</h1>
+					<!-- /logo -->
+                </div>
+
+				<nav class="collapse navbar-collapse navbar-right" role="navigation">
+					<ul id="nav" class="nav navbar-nav">
+						<li><a href="./" class="external">Home</a></li>
+						<li><a href="./?section=service" class="external">Services</a></li>
+						<li><a href="./?section=portfolio" class="external">Blog</a></li>
+						<li><a href="./?section=testimonials" class="external">Testimonials</a></li>
+						<li><a href="./about" class="external">About</a></li>
+						<li><a href="./?section=contact" class="external">Contact</a></li>
+					</ul>
+				</nav>
+				
+				
+            </div>
+        </header>
+        <!--
+        End Fixed Navigation
+        ==================================== -->
+		
+		<main class="site-content" role="main">
+		
+			
+<section id="privacy-policy">
+    <div class="container">
+        <div class="row">
+            <div class="sec-title text-center wow animated fadeInDown">
+                <br><br>
+                <h2>Client Information Form</h2>
+            </div>
+            <div class="col-md-12">
+                <div class="policy-content">
+                    <iframe aria-label="Client Information Form" 
+                        frameborder="0" 
+                        allow="geolocation;" 
+                        style="height:500px;width:99%;border:none;" 
+                        src="https://forms.zohopublic.com/whitneyma/form/ClientDetails/formperma/cWe5MvD38zE2U3882V2k-fxD31_87c4oISCvYTFsUNc">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+			
+					
+			
+			<!-- Social section -->
+			<section id="social" class="parallax">
+				<div class="overlay">
+					<div class="container">
+						<div class="row">
+						
+							<div class="sec-title text-center white wow animated fadeInDown">
+								<h2>Social Updates</h2>
+
+							</div>
+							
+							<ul class="social-button">
+								<li class="wow animated zoomIn"><a href="https://www.linkedin.com/in/whitneyma" target="_blank"><i class="fa fa-linkedin fa-2x"></i></a></li>
+								<li class="wow animated zoomIn" data-wow-delay="0.3s"><a href="https://www.facebook.com/consultwma/" target="_blank"><i class="fa fa-facebook fa-2x"></i></a></li>
+								<li class="wow animated zoomIn" data-wow-delay="0.6s"><a href="https://www.instagram.com/consultwma/" target="_blank"><i class="fa fa-instagram fa-2x"></i></a></li>						
+							</ul>
+							
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- end Social section -->
+			
+		<!-- Contact section -->
+<section id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="sec-title text-center wow animated fadeInDown">
+                <h2>Get in Touch</h2>
+                <p>Have a question or need support? Leave a message!</p>
+            </div>
+
+            <div class="col-md-7 contact-form wow animated fadeInLeft">
+                <iframe src="https://whatsform.com/lvanxq" width="100%" height="600" frameBorder="0" style="margin-bottom: 20px;"></iframe>
+            </div>
+
+            <div class="col-md-5 wow animated fadeInRight">
+                <address class="contact-details">
+					<br>
+					<br>
+                    <h3>Contact Us</h3>
+                    <p>
+                        <i class="fa fa-pencil"></i>Whitney M. A.
+                        <span>Palmiste Drive</span>
+                        <span>Phillipine</span>
+                        <span>Trinidad & Tobago W.I.</span>
+                    </p>
+                    <br>
+                    <p><i class="fa fa-phone"></i>Phone: (868) 353-9464</p>
+                    <p><i class="fa fa-envelope"></i>hello@whitneyma.com</p>
+                </address>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- end Contact section -->
+
+			
+			
+		
+		<footer id="footer">
+			<div class="container">
+				<div class="row text-center">
+					<div class="footer-content">
+						<div class="wow animated fadeInDown">
+							<p>newsletter signup coming soon</p>
+							<p>You'll Get Cool Stuff! I Hate Spam!</p>
+						</div>
+
+
+						<p>Copyright &copy; 2024-2025 Whitney M. A. Management, Consultation & Academic Services. 
+						<a href="./privacy-policy">Privacy Policy </a> 
+						Theme By: <a href="https://www.themefisher.com">Themefisher</a> </p>
+
+<script>window.$zoho=window.$zoho || {};$zoho.salesiq=$zoho.salesiq||{ready:function(){}}</script><script id="zsiqscript" 
+src="https://salesiq.zohopublic.com/widget?wc=siqc267ea9e346b7b4ea1bc43a998b3b3d0a5c7c33b55ade9253e158706367de35f" defer></script>
+						
+					</div>
+				</div>
+			</div>
+		</footer>
+		
+		<!-- Essential jQuery Plugins
+		================================================== -->
+		<!-- Main jQuery -->
+        <script src="js/jquery-1.11.1.min.js"></script>
+		<!-- Twitter Bootstrap -->
+        <script src="js/bootstrap.min.js"></script>
+		<!-- Single Page Nav -->
+        <script src="js/jquery.singlePageNav.min.js"></script>
+		<!-- jquery.fancybox.pack -->
+        <script src="js/jquery.fancybox.pack.js"></script>
+		<!-- Owl Carousel -->
+        <script src="js/owl.carousel.min.js"></script>
+        <!-- jquery easing -->
+        <script src="js/jquery.easing.min.js"></script>
+        <!-- Fullscreen slider -->
+        <script src="js/jquery.slitslider.js"></script>
+        <script src="js/jquery.ba-cond.min.js"></script>
+		<!-- onscroll animation -->
+        <script src="js/wow.min.js"></script>
+		<!-- Custom Functions -->
+        <script src="js/main.js"></script>
+
+		<script>
+			// Function to scroll to a section by ID
+			function scrollToSection(sectionId) {
+				const targetElement = document.getElementById(sectionId);
+				if (targetElement) {
+					targetElement.scrollIntoView({ behavior: 'smooth' });
+		
+					// Clean up the URL by removing query parameters
+					const cleanURL = window.location.origin + window.location.pathname;
+					window.history.replaceState(null, '', cleanURL);
+				}
+			}
+		
+			// Handle navigation clicks (for same-page navigation)
+			document.querySelectorAll('a[data-target]').forEach(link => {
+				link.addEventListener('click', function (e) {
+					e.preventDefault(); // Prevent default anchor behavior
+					const targetId = this.getAttribute('data-target'); // Get the target section ID
+					scrollToSection(targetId);
+				});
+			});
+		
+			// Handle cross-page navigation (using query parameters)
+			window.addEventListener('load', () => {
+				const urlParams = new URLSearchParams(window.location.search);
+				const section = urlParams.get('section'); // Get the 'section' parameter from the URL
+				if (section) {
+					scrollToSection(section); // Scroll to the specified section
+				}
+			});
+		</script>
+
+		<script>
+  document.cookie = "ar_debug=some_value; SameSite=None; Secure";
+</script>
+
+		
+    </body>
+</html>
