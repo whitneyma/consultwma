@@ -496,6 +496,21 @@ src="https://salesiq.zohopublic.com/widget?wc=siqc267ea9e346b7b4ea1bc43a998b3b3d
   document.cookie = "ar_debug=some_value; SameSite=None; Secure";
 </script>
 
+<script>
+document.querySelectorAll('.nav a').forEach(a => {
+  a.addEventListener('click', function (e) {
+    const href = this.getAttribute('href') || '';
+    const isExternal = /^https?:\/\//i.test(href);
+    if (isExternal) return; // let the browser handle it
+
+    e.preventDefault();
+    const targetId = this.dataset.target || href;
+    // your smooth-scroll logic
+  });
+});
+</script>
+
+
 				
     </body>
 </html>
