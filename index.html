@@ -473,14 +473,19 @@ src="https://salesiq.zohopublic.com/widget?wc=siqc267ea9e346b7b4ea1bc43a998b3b3d
 				}
 			}
 		
-			// Handle navigation clicks (for same-page navigation)
-			document.querySelectorAll('a[data-target]').forEach(link => {
-				link.addEventListener('click', function (e) {
-					e.preventDefault(); // Prevent default anchor behavior
-					const targetId = this.getAttribute('data-target'); // Get the target section ID
-					scrollToSection(targetId);
-				});
-			});
+// Handle navigation clicks (only those with data-target)
+document.querySelectorAll('a[data-target]').forEach(link => {
+  link.addEventListener('click', function (e) {
+    const targetId = this.getAttribute('data-target');
+
+    // Only intercept if the target is a section ID on this page
+    if (targetId) {
+      e.preventDefault();
+      scrollToSection(targetId);
+    }
+  });
+});
+
 		
 			// Handle cross-page navigation (using query parameters)
 			window.addEventListener('load', () => {
@@ -496,19 +501,7 @@ src="https://salesiq.zohopublic.com/widget?wc=siqc267ea9e346b7b4ea1bc43a998b3b3d
   document.cookie = "ar_debug=some_value; SameSite=None; Secure";
 </script>
 
-<script>
-document.querySelectorAll('.nav a').forEach(a => {
-  a.addEventListener('click', function (e) {
-    const href = this.getAttribute('href') || '';
-    const isExternal = /^https?:\/\//i.test(href);
-    if (isExternal) return; // let the browser handle it
 
-    e.preventDefault();
-    const targetId = this.dataset.target || href;
-    // your smooth-scroll logic
-  });
-});
-</script>
 
 
 				
